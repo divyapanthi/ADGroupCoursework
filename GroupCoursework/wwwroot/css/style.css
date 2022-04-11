@@ -1,0 +1,57 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: black;
+}
+
+.banner img {
+    height: 90vh;
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(70%);
+}
+
+    .banner img::after {
+        content: '';
+        background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(EauDp1hUcAAE-bK.jpg);
+    }
+
+.banner-desc {
+    color: white;
+    position: absolute;
+    top: 8%;
+    width: 40%;
+}
+
+    .banner-desc h1 {
+        font-size: 70px;
+        font-weight: 600;
+    }
+
+    .banner-desc p {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .banner-desc button {
+        padding: 10px 40px;
+        border: none;
+        border-radius: 5px;
+        background: #b70202;
+        color: white;
+        /* font-weight: 600; */
+        text-transform: uppercase;
+        font-size: 19px;
+        transition: ease-in-out 300ms;
+    }
+
+        .banner-desc button:hover {
+            background-color: #880202;
+        }
