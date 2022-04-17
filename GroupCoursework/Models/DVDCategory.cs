@@ -2,6 +2,10 @@
 using System.ComponentModel.DataAnnotations;
 
 
+
+
+
+
 namespace GroupCoursework.Models
 {
     public class DVDCategory
