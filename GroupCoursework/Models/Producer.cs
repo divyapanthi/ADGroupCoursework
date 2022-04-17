@@ -4,7 +4,7 @@ namespace GroupCoursework.Models
     public class Producer
     {
         [Key]
-        public long ProducerNumber { get; set; }
+        public int ProducerNumber { get; set; }
         public string ProducerName { get; set; }
     }
 }

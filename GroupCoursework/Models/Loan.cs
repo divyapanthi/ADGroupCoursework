@@ -7,14 +7,8 @@ namespace GroupCoursework.Models
     public class Loan
     {
         [Key]
-        public long LoanNumber { get; set; }
-        public long LoanTypeNumber { get; set; }
-        public long CopyNumber { get; set; }
-        public long MemberNumber { get; set; }
-        public DateTime DateOut { get; set; }
-        public DateTime DateDue { get; set; }
-        public DateTime DateReturned { get; set; }
-
+        public int LoanNumber { get; set; }
+        
         [ForeignKey("LoanTypeNumber")]
         public LoanType LoanType { get; set; }
 
@@ -23,5 +17,11 @@ namespace GroupCoursework.Models
 
         [ForeignKey("MemberNumber")]
         public Member Member { get; set; }
+
+        public DateTime DateOut { get; set; }
+
+        public DateTime DateDue { get; set; }
+
+        public DateTime DateReturned { get; set; }
     }
 }
