@@ -7,8 +7,9 @@ namespace GroupCoursework.Models
     public class Actor
     {
         [Key]
-        public long ActorNumber { get; set; }
+        public int ActorNumber { get; set; }
         public string ActorFirstName { get; set; }
-        public string ActorLastName { get; set; }
+        public string ActorSurname { get; set; }
+
     }
 }

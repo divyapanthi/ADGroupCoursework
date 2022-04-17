@@ -5,8 +5,8 @@ namespace GroupCoursework.Models
     public class MembershipCategory
     {
         [Key]
-        public long MembershipCategoryNumber { get; set; }
+        public int MembershipCategoryNumber { get; set; }
         public string MembershipCategoryDescription { get; set; }
-        public int MembershipCategoryTotalLoans { get; set; }
+        public string MembershipCategoryTotalLoans { get; set; }
     }
 }
